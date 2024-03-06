@@ -12,7 +12,7 @@ namespace AutoUpdate
     public class FileDetails
     {
         public string Name { get; set; }
-        public bool UsingRoot { get; set; }
+        public bool UsingRoot { get; set; } = true;
         public bool Run { get; set; }
     }
 
@@ -49,10 +49,10 @@ namespace AutoUpdate
 
                 foreach (var file in sftp.ServerPath.Files)
                 {
-                    using var outputFileStream = File.OpenWrite(file.Name);
+                    using var outputFileStream = File.OpenWrite(Path.GetFileName(file.Name));
                     var sftpFilePath = file.Name;
 
-                    if (file.UsingRoot || file.UsingRoot.Equals(null))
+                    if (file.UsingRoot)
                     {
                         var root = sftp.ServerPath.Root.TrimEnd('/') + "/";
                         sftpFilePath = $"{root}{file.Name}";
