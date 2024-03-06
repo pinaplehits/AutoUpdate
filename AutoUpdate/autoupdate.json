@@ -1,0 +1,25 @@
+{
+  "user": "26ZA0suT2323Mmjk=DR6",
+  "password": "660YPyGP6g8LlVNviJAaz/OE2Ag==08H",
+  "ip": "194.108.117.16",
+  "serverPath": {
+    "root": "pub/example",
+    "files": [
+      {
+        "name": "readme.txt",
+        "usingRoot": false,
+        "run": true
+      },
+      {
+        "name": "imap-console-client.png",
+        "usingRoot": true
+      },
+      {
+        "name": "winceclient.png",
+        "usingRoot": true,
+        "run": true
+      }
+    ]
+  },
+  "keepConsoleOpen": false
+}
