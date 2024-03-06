@@ -16,7 +16,6 @@
       },
       {
         "name": "winceclient.png",
-        "usingRoot": true,
         "run": true
       }
     ]
