@@ -41,7 +41,7 @@ The application reads its configuration from the `autoupdate.json` file, which s
   - `root`: Root directory on the SFTP server.
   - `files`: List of files to be updated.
     - `name`: Name of the file.
-    - `usingRoot`: Boolean indicating whether the file path uses the root directory.
+    - `usingRoot`: Boolean indicating whether the file path uses the root directory. Default is true.
     - `run`: Boolean indicating whether the file should be executed after downloading.
 - `keepConsoleOpen`: Boolean indicating whether the console should remain open after execution.
 
