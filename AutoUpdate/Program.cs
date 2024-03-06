@@ -92,7 +92,7 @@ namespace AutoUpdate
 
         private static SftpSettings ReadSettings()
         {
-            const string settingsFilename = "autoupdate .json";
+            const string settingsFilename = "autoupdate.json";
 
             if (!File.Exists(settingsFilename)) throw new FileNotFoundException("Settings file not found!");
 
