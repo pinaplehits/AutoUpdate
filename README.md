@@ -4,7 +4,7 @@ AutoUpdate is a C# application designed to automate the process of updating file
 
 ## Configuration
 
-The application reads its configuration from the `autoupdate.json` file, which should be present in the application directory. Below is an example of the configuration file structure:
+The application reads its configuration from the [autoupdate.json](AutoUpdate/autoupdate.json)  file, which should be present in the application directory. Below is an example of the configuration file structure:
 
 ```json
 {
